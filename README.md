@@ -20,3 +20,5 @@ End result
 
 How to use this:
 Build like in the diagram and use the yaml files to generate the binary and write it to the ESP-01 like described on https://esphome.io/
+
+The yaml I found somewhere and forgot to keep the link so it's not mine but made some minor tweaks to make it work with the ESP-01
