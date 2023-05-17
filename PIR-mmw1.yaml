@@ -67,6 +67,17 @@ sensor:
       name: Still Energy
     detection_distance:
       name: Detection Distance
+  - platform: adc
+    pin: VCC
+    id: "VCC"
+    internal: true
+  - platform: template
+    name: "Battery"
+    unit_of_measurement: '%'
+    update_interval: 5s
+    lambda: |-
+      return ((id(VCC).state /4.20) * 100.00);
+
 binary_sensor:
   - platform: ld2410
     has_target:
